@@ -1,80 +1,41 @@
 import sys
-
 import pygame
-
- 
-
-SCREEN_SIZE   = 640,480
-
- 
-
+SCREEN_SIZE   = 700,500
 # Object dimensions
 
 BRICK_WIDTH   = 60
-
 BRICK_HEIGHT  = 15
-
-PADDLE_WIDTH  = 60
-
+PADDLE_WIDTH  = 100
 PADDLE_HEIGHT = 12
-
 BALL_DIAMETER = 16
-
 BALL_RADIUS   = BALL_DIAMETER / 2
 
- 
 
 MAX_PADDLE_X = SCREEN_SIZE[0] - PADDLE_WIDTH
-
 MAX_BALL_X   = SCREEN_SIZE[0] - BALL_DIAMETER
-
 MAX_BALL_Y   = SCREEN_SIZE[1] - BALL_DIAMETER
 
- 
-
 # Paddle Y coordinate
-
 PADDLE_Y = SCREEN_SIZE[1] - PADDLE_HEIGHT - 10
 
- 
-
 # Color constants
-
 BLACK = (0,0,0)
-
 WHITE = (255,255,255)
-
 BLUE  = (0,0,255)
-
 GOLD = (200,200,0)
-
 GREEN = (0,255,0)
-
 SKY_BLUE = (0,239,255)
-
 ORANGE = (255,154,0)
-
 RED = (255,0,0)
 
- 
-
- 
 
 # State constants
-
 STATE_BALL_IN_PADDLE = 0
-
 STATE_PLAYING = 1
-
 STATE_WON = 2
-
 STATE_GAME_OVER = 3
-
 STATE_NEXT_LEVEL = 4
-
 STATE_PAUSE = 5
-
- 
 
 class Bricka:
 
@@ -463,6 +424,7 @@ class Bricka:
             elif self.level == 4:
 
                 self.BRICK_COLOUR = RED
+            
 
             else:
 
